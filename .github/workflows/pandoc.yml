@@ -51,7 +51,7 @@ jobs:
             --lua-filter diagram.lua
             --embed-resources
             --metadata title="eXtensible Access Control Markup Language (XACML) Version 4.0"
-            --output output/xacml-v4.0-csd01.html 
+            --output output/xacml-v4.0-csd01+definition_lists.html 
             xacml-v4.0-csd01.md 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -63,5 +63,5 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: summary
         run: |
-          echo "### Check the result: https://oasis-tcs.github.io/xacml-spec/xacml-v4.0-csd01.html" >> $GITHUB_STEP_SUMMARY
+          echo "### Check the result: https://cdanger.github.io/xacml-spec/xacml-v4.0-csd01+definition_lists.html" >> $GITHUB_STEP_SUMMARY
 
